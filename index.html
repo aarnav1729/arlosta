@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arlosta</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
     <div class="video-background">
-      <video autoplay muted loop preload="auto" id="background-video">
-        <source src="./bg.mp4" type="video/mp4" />
-      </video>
-      <div class="overlay"></div>
+        <video autoplay muted loop preload="auto" id="background-video">
+            <source src="./bg.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
     </div>
     <header>
-      <img src="./logo.jpg" alt="Arlosta Logo" class="logo" />
+        <img src="./logo.jpg" alt="Arlosta Logo" class="logo">
     </header>
     <main>
-      <div class="center-content">
-        <h1>Coming Soon</h1>
-        <div id="countdown"></div>
-        <div class="form-container">
-          <script async src="https://tally.so/widgets/embed.js"></script>
-
-          <script>
-            window.TallyConfig = {
-              formId: "wv2b78",
-              popup: {
-                emoji: {
-                  text: "👋",
-                  animation: "wave",
-                },
-                autoClose: 2000,
-                overlay: true,
-              },
-            };
-          </script>
+        <div class="center-content">
+            <h1>Coming Soon</h1>
+            <div id="countdown"></div>
+            <div class="form-container">
+                <script async src="https://tally.so/widgets/embed.js"></script>
+                <script>
+                    window.TallyConfig = {
+                        formId: "wv2b78",
+                        popup: {
+                            emoji: {
+                                text: "👋",
+                                animation: "wave"
+                            },
+                            autoClose: 2000,
+                            overlay: true
+                        }
+                    };
+                </script>
+            </div>
         </div>
-      </div>
     </main>
     <script src="scripts.js"></script>
-  </body>
+</body>
 </html>
